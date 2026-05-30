@@ -685,7 +685,7 @@ with gr.Blocks(theme=orange_red_theme, css=css) as demo:
 
                 with gr.Column(scale=2):
                     i2i_live = gr.Image(
-                        label="Processing…", visible=True, show_label=True, type="pil", height=400
+                        label="Output", visible=True, show_label=True, type="pil", height=400
                     )
                     i2i_slider = gr.ImageSlider(
                         label="FLUX.2-Klein (left)  ↔  PiD 4× upscale (right)",
@@ -783,7 +783,7 @@ with gr.Blocks(theme=orange_red_theme, css=css) as demo:
 
                 with gr.Column(scale=2):
                     up_live = gr.Image(
-                        label="Processing…",
+                        label="Output",
                         visible=True,
                         show_label=True,
                         type="pil",
