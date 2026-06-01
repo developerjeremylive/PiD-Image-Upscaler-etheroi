@@ -6,8 +6,6 @@ The workspace natively provides deep generation integration with Z-Image-Turbo (
 
 <img width="1620" height="1375" alt="image (4)" src="https://github.com/user-attachments/assets/79bdf8e4-ca26-4bb6-a5d8-d854829a98e4" />
 
-https://github.com/user-attachments/assets/34fc78a3-f4c1-4463-8a30-5c3e29ef337a
-
 ### **Key Features**
 
 * **NVIDIA PiD Denoising Decoder:** Features the core `nvidia/PiD` 4-step student sampler models (`2k` sweet-spot variant and `2kto4k` ultra-scale configuration) to execute $4\times$ super-resolution natively in pixel space.
@@ -19,6 +17,11 @@ https://github.com/user-attachments/assets/34fc78a3-f4c1-4463-8a30-5c3e29ef337a
 ### **Repository Structure**
 
 ```text
+├── assets/
+│   ├── 1BuKJZzpbEn6fn8hbuXWt.png
+│   ├── Kba3-MJXkmGBwviwL5YRP.png
+│   ├── lbAgWObZG-DknJHF-HmQ1.png
+│   └── UsBIu4P36AXzLd-fZ3_EN.png
 ├── app.py
 ├── LICENSE.txt
 ├── pre-requirements.txt
@@ -26,7 +29,6 @@ https://github.com/user-attachments/assets/34fc78a3-f4c1-4463-8a30-5c3e29ef337a
 ├── README.md
 ├── requirements.txt
 └── uv.lock
-
 ```
 
 ### **Installation and Requirements**
