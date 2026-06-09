@@ -15,70 +15,70 @@ import spaces
 
 DARK = gr.themes.Base(
     primary_hue=gr.themes.Color(
-        c50="#FBE5C7", c100="#F5D29C", c200="#EFC174", c300="#E9B05A",
-        c400="#E5A75B", c500="#E0A458", c600="#C68D3F", c700="#A6722E",
-        c800="#7E5722", c900="#583C18", c950="#3A2810",
+        c50="#E8F4FF", c100="#C2E0FF", c200="#9ACEFF", c300="#6DB8FF",
+        c400="#4AA8FF", c500="#1E90FF", c600="#1A7FE0", c700="#156DC0",
+        c800="#0F59A0", c900="#0A4080", c950="#062860",
     ),
     neutral_hue=gr.themes.Color(
-        c50="#E6E8EB", c100="#C9CDD3", c200="#ACB1B9", c300="#9097A0",
-        c400="#7C8693", c500="#626972", c600="#4A4F58", c700="#363B43",
-        c800="#262C35", c900="#1A1F26", c950="#12161B",
+        c50="#E4E6E9", c100="#C8CCD1", c200="#ACB2BA", c300="#9098A2",
+        c400="#7C8693", c500="#626972", c600="#484E57", c700="#33383F",
+        c800="#1E2229", c900="#111418", c950="#080A0D",
     ),
     font=(gr.themes.GoogleFont("IBM Plex Sans"), "ui-sans-serif", "system-ui", "sans-serif"),
     font_mono=(gr.themes.GoogleFont("IBM Plex Mono"), "ui-monospace", "monospace"),
 ).set(
-    # Backgrounds
-    body_background_fill="#12161B",
-    background_fill_primary="#12161B",
-    background_fill_secondary="#1A1F26",
-    block_background_fill="#1A1F26",
+    # Backgrounds — deep black
+    body_background_fill="#080A0D",
+    background_fill_primary="#080A0D",
+    background_fill_secondary="#0E1117",
+    block_background_fill="#0E1117",
     # Text
-    body_text_color="#E6E8EB",
+    body_text_color="#E4E6E9",
     body_text_color_subdued="#7C8693",
     # Borders
-    border_color_primary="#262C35",
-    border_color_accent="#E0A458",
+    border_color_primary="#1A1F26",
+    border_color_accent="#1E90FF",
     # Buttons — primary
-    button_primary_background_fill="#E0A458",
-    button_primary_background_fill_hover="#F0B870",
-    button_primary_text_color="#12161B",
-    button_primary_border_color="#E0A458",
-    button_primary_border_color_hover="#F0B870",
+    button_primary_background_fill="#1E90FF",
+    button_primary_background_fill_hover="#4AA8FF",
+    button_primary_text_color="#080A0D",
+    button_primary_border_color="#1E90FF",
+    button_primary_border_color_hover="#4AA8FF",
     # Buttons — secondary
-    button_secondary_background_fill="#1A1F26",
-    button_secondary_background_fill_hover="#232930",
-    button_secondary_text_color="#E6E8EB",
-    button_secondary_border_color="#262C35",
+    button_secondary_background_fill="#0E1117",
+    button_secondary_background_fill_hover="#161B22",
+    button_secondary_text_color="#E4E6E9",
+    button_secondary_border_color="#1A1F26",
     # Inputs
-    input_background_fill="#12161B",
-    input_border_color="#262C35",
-    input_border_color_focus="#E0A458",
+    input_background_fill="#080A0D",
+    input_border_color="#1A1F26",
+    input_border_color_focus="#1E90FF",
     input_border_width="1px",
     # Block styling
     block_border_width="1px",
-    block_border_color="#262C35",
+    block_border_color="#1A1F26",
     block_label_background_fill="transparent",
     block_label_border_color="transparent",
     block_shadow="none",
     # Misc
-    error_background_fill="#3A1E20",
-    error_text_color="#F4A6A8",
-    slider_color="#E0A458",
+    error_background_fill="#1A0A0A",
+    error_text_color="#FF6B6B",
+    slider_color="#1E90FF",
     # Checkbox
-    checkbox_background_color="#12161B",
-    checkbox_background_color_selected="#E0A458",
-    checkbox_border_color="#262C35",
-    checkbox_border_color_selected="#E0A458",
-    checkbox_border_color_focus="#E0A458",
-    checkbox_label_background_fill="#1A1F26",
-    checkbox_label_background_fill_selected="rgba(224,164,88,0.10)",
+    checkbox_background_color="#080A0D",
+    checkbox_background_color_selected="#1E90FF",
+    checkbox_border_color="#1A1F26",
+    checkbox_border_color_selected="#1E90FF",
+    checkbox_border_color_focus="#1E90FF",
+    checkbox_label_background_fill="#0E1117",
+    checkbox_label_background_fill_selected="rgba(30,144,255,0.10)",
     # Table
-    table_border_color="#262C35",
-    table_even_background_fill="#1A1F26",
-    table_odd_background_fill="#12161B",
+    table_border_color="#1A1F26",
+    table_even_background_fill="#0E1117",
+    table_odd_background_fill="#080A0D",
     # Panel
-    panel_background_fill="#1A1F26",
-    panel_border_color="#262C35",
+    panel_background_fill="#0E1117",
+    panel_border_color="#1A1F26",
     panel_border_width="1px",
 )
 
@@ -92,13 +92,13 @@ css = """
 .gradio-container {
     max-width: 1400px !important;
     margin: auto !important;
-    background: #12161B !important;
+    background: #080A0D !important;
 }
 
 /* ── Tab strip ── */
 .tab-nav {
-    border-bottom: 1px solid #262C35 !important;
-    background: #12161B !important;
+    border-bottom: 1px solid #1A1F26 !important;
+    background: #080A0D !important;
     padding: 0 !important;
 }
 .tab-nav button {
@@ -116,9 +116,9 @@ css = """
 }
 .tab-nav button.selected,
 .tab-nav button:hover {
-    color: #E0A458 !important;
-    border-bottom-color: #E0A458 !important;
-    background: #1A1F26 !important;
+    color: #1E90FF !important;
+    border-bottom-color: #1E90FF !important;
+    background: #0E1117 !important;
 }
 
 /* ── Blocks / panels ── */
@@ -132,7 +132,7 @@ div[data-testid="block"],
 /* ── Labels ── */
 label span, .gr-block label span,
 .block > label > span {
-    color: #9097A0 !important;
+    color: #9098A2 !important;
     font-size: 12px !important;
     font-weight: 500 !important;
     letter-spacing: 0.03em !important;
@@ -140,16 +140,16 @@ label span, .gr-block label span,
 
 /* ── Slider ── */
 input[type=range] {
-    accent-color: #E0A458 !important;
+    accent-color: #1E90FF !important;
     border-radius: 0 !important;
 }
 input[type=range]::-webkit-slider-runnable-track {
-    background: #262C35 !important;
+    background: #1A1F26 !important;
     border-radius: 0 !important;
     height: 4px !important;
 }
 input[type=range]::-webkit-slider-thumb {
-    background: #E0A458 !important;
+    background: #1E90FF !important;
     border-radius: 0 !important;
     width: 14px !important;
     height: 14px !important;
@@ -159,12 +159,12 @@ input[type=range]::-webkit-slider-thumb {
     border: none !important;
 }
 input[type=range]::-moz-range-track {
-    background: #262C35 !important;
+    background: #1A1F26 !important;
     border-radius: 0 !important;
     height: 4px !important;
 }
 input[type=range]::-moz-range-thumb {
-    background: #E0A458 !important;
+    background: #1E90FF !important;
     border-radius: 0 !important;
     width: 14px !important;
     height: 14px !important;
@@ -178,9 +178,9 @@ input[type=email],
 input[type=search],
 textarea,
 select {
-    background: #12161B !important;
-    border: 1px solid #262C35 !important;
-    color: #E6E8EB !important;
+    background: #080A0D !important;
+    border: 1px solid #1A1F26 !important;
+    color: #E4E6E9 !important;
     border-radius: 0 !important;
     font-family: 'IBM Plex Sans', sans-serif !important;
     outline: none !important;
@@ -190,8 +190,8 @@ input[type=number]:focus,
 input[type=email]:focus,
 textarea:focus,
 select:focus {
-    border-color: #E0A458 !important;
-    box-shadow: 0 0 0 1px #E0A458 !important;
+    border-color: #1E90FF !important;
+    box-shadow: 0 0 0 1px #1E90FF !important;
 }
 
 /* ── Buttons ── */
@@ -207,46 +207,46 @@ button,
 button.primary,
 .gr-button-primary,
 button[data-variant="primary"] {
-    background: #E0A458 !important;
-    color: #12161B !important;
-    border: 1px solid #E0A458 !important;
+    background: #1E90FF !important;
+    color: #080A0D !important;
+    border: 1px solid #1E90FF !important;
     border-radius: 0 !important;
 }
 button.primary:hover,
 .gr-button-primary:hover,
 button[data-variant="primary"]:hover {
-    background: #F0B870 !important;
-    border-color: #F0B870 !important;
+    background: #4AA8FF !important;
+    border-color: #4AA8FF !important;
 }
 button.secondary,
 .gr-button-secondary,
 button[data-variant="secondary"] {
-    background: #1A1F26 !important;
-    color: #E6E8EB !important;
-    border: 1px solid #262C35 !important;
+    background: #0E1117 !important;
+    color: #E4E6E9 !important;
+    border: 1px solid #1A1F26 !important;
     border-radius: 0 !important;
 }
 button.secondary:hover,
 .gr-button-secondary:hover,
 button[data-variant="secondary"]:hover {
-    background: #232930 !important;
-    border-color: #E0A458 !important;
+    background: #161B22 !important;
+    border-color: #1E90FF !important;
 }
 
 /* ── Accordion / details ── */
 details,
 .gr-accordion {
-    border: 1px solid #262C35 !important;
+    border: 1px solid #1A1F26 !important;
     border-radius: 0 !important;
-    background: #1A1F26 !important;
+    background: #0E1117 !important;
     margin: 6px 0 !important;
 }
 details summary,
 .gr-accordion summary {
-    background: #1A1F26 !important;
+    background: #0E1117 !important;
     border-bottom: 1px solid transparent !important;
     border-radius: 0 !important;
-    color: #9097A0 !important;
+    color: #9098A2 !important;
     padding: 9px 14px !important;
     font-size: 12px !important;
     font-weight: 500 !important;
@@ -258,48 +258,48 @@ details summary,
 }
 details summary:hover,
 .gr-accordion summary:hover {
-    color: #E0A458 !important;
-    border-bottom-color: #E0A458 !important;
+    color: #1E90FF !important;
+    border-bottom-color: #1E90FF !important;
 }
 details[open] > summary {
-    border-bottom: 1px solid #262C35 !important;
-    color: #E0A458 !important;
+    border-bottom: 1px solid #1A1F26 !important;
+    color: #1E90FF !important;
 }
 
 /* ── Markdown ── */
 .gr-markdown h1, .prose h1 {
-    color: #E6E8EB !important;
+    color: #E4E6E9 !important;
     font-size: 22px !important;
     font-weight: 700 !important;
-    border-bottom: 1px solid #262C35 !important;
+    border-bottom: 1px solid #1A1F26 !important;
     padding-bottom: 8px !important;
     margin-bottom: 14px !important;
 }
 .gr-markdown h2, .prose h2 {
-    color: #E6E8EB !important;
+    color: #E4E6E9 !important;
     font-size: 17px !important;
     font-weight: 600 !important;
 }
 .gr-markdown h3, .prose h3 {
-    color: #C9CDD3 !important;
+    color: #C8CCD1 !important;
     font-size: 14px !important;
 }
 .gr-markdown p, .prose p {
-    color: #9097A0 !important;
+    color: #9098A2 !important;
     font-size: 13px !important;
     line-height: 1.6 !important;
 }
 .gr-markdown a, .prose a {
-    color: #E0A458 !important;
+    color: #1E90FF !important;
     text-decoration: underline !important;
 }
 .gr-markdown strong, .prose strong {
-    color: #E6E8EB !important;
+    color: #E4E6E9 !important;
 }
 .gr-markdown code, .prose code {
-    background: #12161B !important;
-    color: #E0A458 !important;
-    border: 1px solid #262C35 !important;
+    background: #080A0D !important;
+    color: #1E90FF !important;
+    border: 1px solid #1A1F26 !important;
     border-radius: 0 !important;
     padding: 1px 5px !important;
     font-size: 12px !important;
@@ -312,42 +312,42 @@ details[open] > summary {
 [data-testid="image"],
 .image-container,
 [data-testid="image"] > div {
-    background: #12161B !important;
-    border: 1px solid #262C35 !important;
+    background: #080A0D !important;
+    border: 1px solid #1A1F26 !important;
     border-radius: 0 !important;
 }
 .gr-image:hover,
 .upload-container:hover {
-    border-color: #E0A458 !important;
+    border-color: #1E90FF !important;
 }
 
 /* ── Image slider ── */
 .image-slider-container,
 [data-testid="imageslider"],
 [data-testid="imageslider"] > div {
-    border: 1px solid #262C35 !important;
+    border: 1px solid #1A1F26 !important;
     border-radius: 0 !important;
-    background: #12161B !important;
+    background: #080A0D !important;
 }
 
 /* ── Checkboxes ── */
 input[type=checkbox] {
-    accent-color: #E0A458 !important;
+    accent-color: #1E90FF !important;
     border-radius: 0 !important;
     -webkit-appearance: none !important;
     appearance: none !important;
     width: 14px !important;
     height: 14px !important;
-    border: 1px solid #262C35 !important;
-    background: #12161B !important;
+    border: 1px solid #1A1F26 !important;
+    background: #080A0D !important;
     vertical-align: middle !important;
     position: relative !important;
     cursor: pointer !important;
     flex-shrink: 0 !important;
 }
 input[type=checkbox]:checked {
-    background: #E0A458 !important;
-    border-color: #E0A458 !important;
+    background: #1E90FF !important;
+    border-color: #1E90FF !important;
 }
 input[type=checkbox]:checked::after {
     content: "✓" !important;
@@ -355,17 +355,17 @@ input[type=checkbox]:checked::after {
     top: -2px !important;
     left: 1px !important;
     font-size: 11px !important;
-    color: #12161B !important;
+    color: #080A0D !important;
     font-weight: 700 !important;
 }
 input[type=checkbox]:focus {
-    box-shadow: 0 0 0 1px #E0A458 !important;
+    box-shadow: 0 0 0 1px #1E90FF !important;
     outline: none !important;
 }
 
 /* ── Radio buttons ── */
 input[type=radio] {
-    accent-color: #E0A458 !important;
+    accent-color: #1E90FF !important;
 }
 
 /* ── Progress bar ── */
@@ -376,7 +376,7 @@ input[type=radio] {
     border-radius: 0 !important;
 }
 .progress-bar > div {
-    background: #E0A458 !important;
+    background: #1E90FF !important;
     border-radius: 0 !important;
 }
 
@@ -384,51 +384,51 @@ input[type=radio] {
 ul[role=listbox],
 [role=option],
 .gr-dropdown {
-    border: 1px solid #262C35 !important;
+    border: 1px solid #1A1F26 !important;
     border-radius: 0 !important;
-    background: #1A1F26 !important;
-    color: #E6E8EB !important;
+    background: #0E1117 !important;
+    color: #E4E6E9 !important;
 }
 [role=option]:hover {
-    background: #232930 !important;
-    color: #E0A458 !important;
+    background: #161B22 !important;
+    color: #1E90FF !important;
 }
 
 /* ── Status / error cards ── */
 .status-card {
     padding: 12px 16px !important;
     border-radius: 0 !important;
-    background: #1A1F26 !important;
-    border: 1px solid #262C35 !important;
+    background: #0E1117 !important;
+    border: 1px solid #1A1F26 !important;
 }
 .status-error {
-    background: #3A1E20 !important;
-    border-color: #F4A6A8 !important;
-    color: #F4A6A8 !important;
+    background: #1A0A0A !important;
+    border-color: #FF6B6B !important;
+    color: #FF6B6B !important;
 }
 
 /* ── PiD header ── */
 .pid-header {
     padding: 18px 0 12px 0 !important;
-    border-bottom: 2px solid #E0A458 !important;
+    border-bottom: 2px solid #1E90FF !important;
     margin-bottom: 16px !important;
 }
 .pid-header h1 {
     font-family: 'IBM Plex Sans', sans-serif !important;
     font-size: 26px !important;
     font-weight: 700 !important;
-    color: #E6E8EB !important;
+    color: #E4E6E9 !important;
     margin: 0 0 8px 0 !important;
     letter-spacing: -0.01em !important;
 }
 .pid-header h1 .accent {
-    color: #E0A458 !important;
+    color: #1E90FF !important;
 }
 .pid-tipbar {
     padding: 8px 14px !important;
-    background: #1A1F26 !important;
-    border: 1px solid #262C35 !important;
-    border-left: 3px solid #E0A458 !important;
+    background: #0E1117 !important;
+    border: 1px solid #1A1F26 !important;
+    border-left: 3px solid #1E90FF !important;
     border-radius: 0 !important;
     font-size: 12px !important;
     color: #7C8693 !important;
@@ -437,22 +437,16 @@ ul[role=listbox],
     line-height: 1.6 !important;
 }
 .pid-tipbar a {
-    color: #E0A458 !important;
+    color: #1E90FF !important;
     text-decoration: underline !important;
 }
 .pid-tipbar strong {
-    color: #C9CDD3 !important;
+    color: #C8CCD1 !important;
     font-weight: 500 !important;
 }
 
 /* ────────────────────────────────────────────────────────────
    Dim info badge — SINGLE outer border only
-   Gradio wraps gr.Markdown in several divs:
-     .pid-dim-badge          ← our elem_classes hook (outer)
-       div                   ← Gradio block wrapper
-         div.prose / .gr-markdown  ← actual prose node
-   We kill every border/shadow/background on every inner layer,
-   then re-apply ONE clean border on the outermost wrapper.
    ──────────────────────────────────────────────────────────── */
 
 /* 1. Strip borders from ALL descendant wrappers inside the badge */
@@ -486,20 +480,19 @@ div.pid-dim-badge {
     padding: 0 !important;
 }
 
-/* 3. The ONE real border lives here — outermost wrapper via the class selector */
+/* 3. The ONE real border lives here — outermost wrapper */
 div[class*="pid-dim-badge"],
 .pid-dim-badge {
     font-family: 'IBM Plex Mono', monospace !important;
     font-size: 11.5px !important;
     color: #7C8693 !important;
-    background: #12161B !important;
-    border: 1px solid #262C35 !important;
+    background: #080A0D !important;
+    border: 1px solid #1A1F26 !important;
     border-left: 3px solid #626972 !important;
     border-radius: 0 !important;
     padding: 6px 10px !important;
     margin: 4px 0 8px 0 !important;
     line-height: 1.5 !important;
-    /* Ensure it paints as a block */
     display: block !important;
 }
 
@@ -519,14 +512,14 @@ div[class*="pid-dim-badge"],
 
 /* ── Scrollbar ── */
 ::-webkit-scrollbar { width: 6px; height: 6px; }
-::-webkit-scrollbar-track { background: #12161B; border-radius: 0; }
-::-webkit-scrollbar-thumb { background: #262C35; border-radius: 0; }
-::-webkit-scrollbar-thumb:hover { background: #E0A458; }
+::-webkit-scrollbar-track { background: #080A0D; border-radius: 0; }
+::-webkit-scrollbar-thumb { background: #1A1F26; border-radius: 0; }
+::-webkit-scrollbar-thumb:hover { background: #1E90FF; }
 
 /* ── HR dividers ── */
 hr {
     border: none !important;
-    border-top: 1px solid #262C35 !important;
+    border-top: 1px solid #1A1F26 !important;
     margin: 12px 0 !important;
 }
 
@@ -534,33 +527,33 @@ hr {
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
     opacity: 1 !important;
-    background: #1A1F26 !important;
-    border-left: 1px solid #262C35 !important;
+    background: #0E1117 !important;
+    border-left: 1px solid #1A1F26 !important;
 }
 
 /* ── File / upload button ── */
 .file-upload button,
 [data-testid="upload-btn"],
 label[data-testid="upload-btn"] {
-    border: 1px dashed #262C35 !important;
+    border: 1px dashed #1A1F26 !important;
     border-radius: 0 !important;
-    background: #12161B !important;
+    background: #080A0D !important;
     color: #7C8693 !important;
     transition: border-color 0.15s, color 0.15s !important;
 }
 .file-upload button:hover,
 [data-testid="upload-btn"]:hover {
-    border-color: #E0A458 !important;
-    color: #E0A458 !important;
+    border-color: #1E90FF !important;
+    color: #1E90FF !important;
 }
 
 /* ── Tooltip / popover ── */
 .tippy-box,
 [data-tippy-content] {
-    border: 1px solid #262C35 !important;
+    border: 1px solid #1A1F26 !important;
     border-radius: 0 !important;
-    background: #1A1F26 !important;
-    color: #E6E8EB !important;
+    background: #0E1117 !important;
+    color: #E4E6E9 !important;
     font-size: 12px !important;
     font-family: 'IBM Plex Mono', monospace !important;
 }
