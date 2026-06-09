@@ -1,4 +1,4 @@
-# **PiD-Image-Upscaler**
+# **[PiD-Image-Upscaler](https://huggingface.co/spaces/prithivMLmods/PiD-Image-Upscaler)**
 
 PiD-Image-Upscaler is an experimental, advanced super-resolution and image-to-image refinement application based on the state-of-the-art **PiD (Pixel Diffusion Decoder)** framework by NVIDIA. This application couples local generative text-to-image and image-to-image pipelines with a structural 4-step student diffusion sampler to deliver clean, crisp $4\times$ image upscaling.
 
