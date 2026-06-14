@@ -57,7 +57,7 @@ pip install -r requirements.txt
 
 `uv` is an ultra-fast Python package and project manager written in Rust, which guarantees rapid virtual environment synchronization and completely deterministic execution paths.
 
-**Step 1 — Install `uv**`
+**Step 1 — Install `uv`**
 
 * **macOS / Linux:** `curl -LsSf https://astral.sh/uv/install.sh | sh`
 * **Windows:** `powershell -c "irm https://astral.sh/uv/install.ps1 | iex"`
